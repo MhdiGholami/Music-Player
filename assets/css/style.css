@@ -1,0 +1,267 @@
+/* fonts */
+@font-face {
+  font-family: 'Nunito';
+  src: url(../fonts/Nunito-Regular.ttf);
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .playlist-container {
+    width: 80%;
+  }
+
+  .playlist-body{
+    height: 66%;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .playlist-container {
+    width: 45%;
+  }
+}
+
+/* laptop and desktop */
+@media screen and (min-width: 992px) {
+  .playlist-container {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .playlist-container {
+    width: 28%;
+  }
+}
+
+
+/* main css styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(280deg, #fed0d0 0%, #c7edfe 100%);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-container {
+  height: 85%;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.playlist-title {
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.title-play {
+  width: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.title-playImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title-details {
+  width: 70%;
+}
+
+.title-playIcon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.music-info {
+  width: 100%;
+  height: 50%;
+}
+
+.title-musicName {
+  font-size: 18px;
+}
+
+.title-musicArtist {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgb(100, 100, 100);
+}
+
+.title-musicControl {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.previous-btn,
+.next-btn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.music-time {
+  position: relative;
+  width: 80%;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 8px;
+  background-color: #d0d8e6;
+}
+
+.progress {
+  position: absolute;
+  /* width: 20%; */
+  height: 100%;
+  background-color: #F69898;
+  border-radius: 5px;
+}
+
+.playlist-body {
+  width: 100%;
+  height: 66%;
+  margin-top: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.list {
+  width: 100%;
+}
+
+.music {
+  display: flex;
+  padding-top: 15px;
+}
+
+.list-image {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.list-playImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.list-playIcon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.list-text {
+  width: 60%;
+  padding: 0 20px;
+  align-content: center;
+}
+
+.list-icon {
+  width: 20%;
+  padding-top: 5px;
+
+  >div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 5px 0;
+
+    >img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.list-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.list-singer {
+  font-weight: normal;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.playlist-footer {
+  width: 100%;
+  box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-parent {
+  width: 25%;
+  text-align: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-title {
+  color: #222222;
+  font-size: 10px;
+}
+
+.duration-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  top: -20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#current-time, #duration{
+  font-size: 11px;
+  font-family: 'Nunito';
+}
+
+.hidden{
+  display: none;
+}
+
+.opacity{
+  opacity: 0;
+}

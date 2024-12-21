@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Music List Project</title>
+</head>
+
+<body>
+    <div class="playlist-container">
+        <div class="playlist-title">
+            <div class="title-play">
+                <img class="title-playImg" src="assets/images/Dharia.jpg" alt="">
+                <img data-handle="false" class="title-playIcon" src="assets/images/play_icon.svg" alt="">
+            </div>
+            <div class="title-details">
+                <div class="music-info">
+                    <h3 id="titleMusicName" class="title-musicName">Dharia</h3>
+                    <h3 id="titleMusicArtist" class="title-musicArtist">Sugar & Brownies</h3>
+                </div>
+                <div class="title-musicControl">
+                    <img id="previous-button" class="previous-btn" src="assets/images/previous-icon.png" alt="">
+                    <div class="music-time">
+                        <span class="progress" id="progress"></span>
+                        <div class="duration-wrapper opacity">
+                            <span id="current-time">0:00</span>
+                            <span id="duration">3:15</span>
+                        </div>
+                    </div>
+                    <img id="next-button" class="next-btn" src="assets/images/next-icon.png" alt="">
+                </div>
+                <audio id="music-player" src="assets/media/music1.mp3"></audio>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="playlist-body">
+            <div id="music-list" class="list">
+                
+            </div>
+        </div>
+        <!-- // -->
+        <div class="playlist-footer">
+            <div class="icon-parent" id="home-icon">
+                <div class="row">
+                    <img class="icon" src="assets/images/Home.png" alt="">
+                </div>
+                <div class="row">
+                    <span class="icon-title">Home</span>
+                </div>
+            </div>
+            <div class="icon-parent" id="favorite-icon">
+                <div class="row">
+                    <img class="icon" src="assets/images/Favorite.png" alt="">
+                </div>
+                <div class="row">
+                    <span id="favorite-icon" class="icon-title">Favorite</span>
+                </div>
+            </div>
+            <div class="icon-parent" id="playlist-icon">
+                <div class="row">
+                    <img class="icon" src="assets/images/Queue.png" alt="">
+                </div>
+                <div class="row">
+                    <span class="icon-title">Queue</span>
+                </div>
+            </div>
+            <div class="icon-parent">
+                <div class="row">
+                    <img class="icon" src="assets/images/History.png" alt="">
+                </div>
+                <div class="row">
+                    <span class="icon-title">History</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
