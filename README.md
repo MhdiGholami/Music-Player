@@ -4,10 +4,9 @@
 
 📸Gallery
 
-![temp conversion]()
 
 
-- [Demo Project](https://mhdigholami.github.io/Draggable-Todolist/) ✅
+- [Demo Project]() ✅
 
 - Developed by Mahdi Gholami
 
